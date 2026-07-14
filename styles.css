@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* #region MAIN */
+
+:root {
+  --teksti: #333333;
+  --tausta: #eeeeee;
+  --teksit-vaalea: #eeeeee;
+  --bg-dark: #444444;
+  --highlight : #008b8b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--tausta);
+  color : var(--teksti);
+}
+
+header {
+  background-color: var(--bg-dark);
+  padding: 10px;
+  color: var(--teksit-vaalea);
+  min-height: 90px; 
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border-bottom: var(--highlight) solid 3px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header nav {
+  margin-left: auto;
+}
+
+header nav a{
+  display: inline-block;
+  color: var(--teksit-vaalea);
+  font-size: 1.1em;
+  padding: 0.8em;
+  text-decoration: none;
+  border: var(--highlight) solid 1px;
+  border-radius: 1px;
+}
+
+header nav a:hover {
+  color: var(--teksti);
+  background-color: var(--highlight);
+}
+
+
+main {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  padding-top: 55px;
+}
+
+section {
+  max-width: 900px;
+  width: 70%;
+  margin: 20px auto;
+}
+
+/* #endregion */
+
+/* #region Index.html*/
+
+
+
+.ingressi {
+  font-size: 1.3em;
+  font-style: italic;
+  line-height: 1.7em;
+
+}
+
+.ingressi::first-letter {
+  float:left;
+  font-size: 2em;
+  line-height: 1em;
+  font-weight: bold;
+  margin-right: 0.1em;
+}
+
+.showcase {
+  background-image: url('../images/screenofcode.jpeg');
+  background-size: 100%;
+  color: var(--teksit-vaalea);
+  font-size: 1.3em;
+  width: 100%;
+  max-width: 100%;
+  padding: 30px 0;
+  text-align: center;
+  height: 300px;
+}
+
+.showcase2 {
+  margin: 0;
+  background-size: 100%;
+  background-color: var(--bg-dark);
+  color: var(--teksit-vaalea);
+  font-size: 3em;
+  width: 100%;
+  max-width: 100%;
+  padding: 60px 0;
+  text-align: center;
+  height: 100px;
+}
+.tyotehtavat {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+/* #endregion*/
+
+/* #region TUTKINNONOSAT NÄPPÄIMET */
+
+.tyotehTglButton {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  text-decoration: none;
+  background-color: var(--bg-dark);
+  color: var(--teksit-vaalea);
+  border: 1px solid var(--teksti);
+  padding: 25px;
+  margin: 10px 0 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.tyotehTglButton:hover {
+  color: var(--teksti);
+  background-color: var(--highlight);
+}
+
+.tyoteh {
+  max-height: 0;
+  overflow: hidden;
+  background-color: var(--teksit-vaalea);
+  color: var(--teksti);
+  border: 1px solid var(--teksti);
+  border-top: none;
+  border-bottom: none;
+  border-radius: 0 0 10px 10px;
+  margin: 0 0 10px;
+  padding: 0 25px;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.tyoteh.open {
+  max-height: 400px;
+  padding: 10px 25px;
+  border-bottom:1px solid var(--teksti);
+}
+/* #endregion */
+
+/* #region Tutkinnonmuodostuminen */
+
+
+.tut-muod-ul li {
+  padding: 5px;
+}
+
+.bigger-p {
+  font-size: 1.5em;
+}
+
+/* #endregion */
+
+/* #region KRITEERIT TABLE */
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+th[scope="col"] {
+  background-color: #505050;
+  color: white;
+}
+
+td {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-size: 1rem;
+  max-width: 900px;
+  width: 70%;
+  margin: 20px auto;
+}
+
+/* #endregion*/

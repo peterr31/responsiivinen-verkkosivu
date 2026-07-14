@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Tieto- ja viestintätekniikan perustutkinto</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="#">Etusivu</a>
+                <a href="tutkinnon_muodostuminen.html">Tutkinnon muodostuminen</a>
+                <a href="tutkinnon_osat.html">Tutkinnonosat</a>
+                <a href="kriteerit.html">Kriteerit</a>
+                <a href="arviointi.html">Arviointi</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="showcase">
+                <section>
+                    <div>
+                        <h1>Tieto- ja viestintätekniikan perustutkinto</h1>
+                        <br>
+                        <h2>Tutkinnon suorittaneen osaaminen</h2>
+                    </div>
+                </section>
+            </div>
+            <hr>
+            <section class="content">
+                <p class="ingressi">Tieto- ja viestintätekniikan perustutkinnon suorittaneella on tieto- ja viestintätekniikan tehtävissä edellytetty ammattitaito,
+                    ja hän osaa toimia yhteistyökykyisesti tieto- ja viestintäteknisessä ympäristössä. Tutkinnon suorittanut osaa käyttää alan sanastoa,
+                    selvittää asiakkaan tarpeita ja tehdä asiakaslähtöisiä ratkaisuja tieto- ja viestintäteknisiin tehtäviin liittyen.
+                    Hän varmistaa, että työn lopputulos vastaa työlle asetettuja vaatimuksia.
+                </p>
+            </section>
+
+            <section class="tutkinnonosat">
+                <h2>Työtehtäviä, joissa tutkinnon suorittanut voi toimia:</h2>
+
+                <button class="tyotehTglButton" onclick="togglePanel('elek-asen')">Elektroniikka-asentaja</button>
+                <div class="tyoteh" id="elek-asen">
+                    osaa tehdä elektroniikka-asennuksiin liittyviä asennus-, testaus- ja huoltotöitä.
+                     Hän osaa käsitellä oikein elektroniikka-asennuksissa tarvittavia komponentteja ja materiaaleja sekä käyttää tarvittavia työ- ja mittavälineitä.
+                </div>
+
+                <button class="tyotehTglButton" onclick="togglePanel('hyvin-asen')">Hyvinvointiteknologia-asentaja</button>
+                <div class="tyoteh" id="hyvin-asen">
+                    osaa toimia sosiaali- ja terveysalan toimintaperiaatteiden ja arvojen mukaan. Hän osaa asentaa turvalaite-
+                    ja hyvinvointiteknologiajärjestelmiä sekä hyödyntää hyvinvointiteknologiaa asiakkaan toimintakyvyn ylläpitämiseksi.
+                    Hän varmistaa laitteiden turvallisen käytön ja opastaa asiakasta hyvinvointiteknologian käytössä
+                </div>
+
+                <button class="tyotehTglButton" onclick="togglePanel('tietove-asen')">Tietoverkkoasentaja</button>
+                <div class="tyoteh" id="tietove-asen">
+                    osaa tehdä tietoverkkokaapeloinnit asiakkaan vaatimusten ja ohjeiden mukaisesti.
+                    Hän huomioi tietoliikenneverkkojen rakenteet ja käytetyt materiaalit sekä tekee tarvittavia mittauksia ja testauksia järjestelmän toimivuuden varmistamiseksi.
+                </div>
+
+                <button class="tyotehTglButton" onclick="togglePanel('IT-tukihenkilö')">IT-tukihenkilö</button>
+                <div class="tyoteh" id="IT-tukihenkilö">
+                    osaa toimia työasemien, verkko- ja lisälaitteiden sekä toimialueiden muodostamassa tieto- ja viestintäteknisessä ympäristössä.
+                     Hän toimii osana tietohallintoa sekä auttaa käyttäjiä erilaisissa teknisissä ongelmissa asiakkaan tiloissa tai etäyhteyden välityksellä.
+                </div>
+
+                <button class="tyotehTglButton" onclick="togglePanel('Ohjelmistokehittäjä')">Ohjelmistokehittäjä</button>
+                <div class="tyoteh" id="Ohjelmistokehittäjä">
+                    osaa ohjelmoida, hyödyntää rajapintoja, käsitellä tietoa sekä käyttää versionhallintaa. 
+                    Ohjelmistokehitystiimin jäsenenä toimiessaan hän kommunikoi asiakkaan kanssa, 
+                    suunnittelee ohjelmiston toteutuksen ja varmistaa toteutettavien toimintojen laadun.                
+                </div>
+                <p>
+                Tieto- ja viestintätekniikan perustutkinnon rakenne ja sisältö on suunniteltu niin,
+                että sähkö- ja automaatioalalla toimiminen -tutkinnon osan suorittaneella on rajoitettuun sähköpätevyyteen 3 määritelty soveltuva koulutus.
+                </p>
+            </section>
+        </main>
+
+        <script>
+            function togglePanel(id) {
+                const panel = document.getElementById(id);
+                panel.classList.toggle('open');
+            }
+        </script>
+    </body>
+</html>
