@@ -27,7 +27,7 @@ header {
   padding: 10px;
   color: var(--teksit-vaalea);
   min-height: 90px; 
-  position: fixed;
+
   width: 100%;
   top: 0;
   border-bottom: var(--highlight) solid 3px;
@@ -48,6 +48,7 @@ header nav a{
   text-decoration: none;
   border: var(--highlight) solid 1px;
   border-radius: 1px;
+  margin-bottom: 5px;
 }
 
 header nav a:hover {
@@ -59,7 +60,7 @@ header nav a:hover {
 main {
   font-size: 1.2em;
   line-height: 1.6em;
-  padding-top: 55px;
+
 }
 
 section {
@@ -96,9 +97,10 @@ section {
   font-size: 1.3em;
   width: 100%;
   max-width: 100%;
-  padding: 30px 0;
+  padding-top: 2px;
   text-align: center;
   height: 300px;
+  line-height: 30px;
 }
 
 .showcase2 {
@@ -109,9 +111,10 @@ section {
   font-size: 3em;
   width: 100%;
   max-width: 100%;
-  padding: 60px 0;
+  padding-top: 5px;
   text-align: center;
   height: 100px;
+  line-height: 40px;
 }
 .tyotehtavat {
   display: block;
